@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Store</title>
+</head>
+<body>
+    <div>
+        <h1>Lockers</h1>
+        {% if lockers %}
+            <ul>
+                {% for locker in lockers %}
+                    <li>
+                        <strong>Name:</strong> {{ locker.title }}<br>
+                        <strong>Description:</strong> {{ locker.content }}<br>
+                        <strong>Created At:</strong> {{ locker.published_date }}<br>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p><strong>No lockers available.</strong></p>
+        {% endif %}
+    </div>
+    <div>
+        <div>
+            <h>Hello</h>
+        </div>
+    </div>
+</body>
+</html>
+
+</html>
+</html>
